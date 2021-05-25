@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        int x,  y, z ;
+
+        System.out.print("digite um numero:");
+        x = sc.nextInt();
+        y = x - 1;
+        z = x + 1;
+        System.out.println("o antecessor é " + y + " e o sucessor é " + z );
+
+        sc.close(); // bom habito para programação 
+    }
+}
