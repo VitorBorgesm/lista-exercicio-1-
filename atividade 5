@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in); // usar sc ao inves de ler pois é mais universal
+        double x, y;
+        double soma, sub, mult, div, potencia;
+         System.out.println("escolha dois numeros: ");
+         x = sc.nextDouble();
+         y = sc.nextDouble();
+
+        soma = x + y;
+        sub = x - y;
+        mult = x * y;
+        div = x / y; 
+        potencia = Math.pow(x, y);
+
+        System.out.println("soma de " + x + " + " + y + " é " + soma);
+        System.out.println("a subtração de " + x + " - " + y + " é " + sub);
+        System.out.println(" a multiplicação de " + x + " X " + y + " é " + mult);
+        System.out.println(" a divisão de " + x + " / " + y + " é " + div);
+        System.out.println(" a potencia de " + x + " por " + y + " é " + potencia);
+
+        sc.close(); // bom habito para programação 
+    }
+}
