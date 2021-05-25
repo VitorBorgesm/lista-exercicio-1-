@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        int base, altura,  area;
+
+        System.out.print("digite a base do retangulo: ");
+        base = sc.nextInt();
+        System.out.print("digite a altura do retangulo: ");
+        altura = sc.nextInt();
+
+        area = (base*altura)/2;
+        System.out.println("area: " + area);
+
+        sc.close(); // bom habito para programação 
+
+
+
+    }
+}
