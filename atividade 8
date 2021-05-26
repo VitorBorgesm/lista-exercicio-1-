@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in); // usar sc ao inves de ler pois é mais universal 
+       int numero1, numero2;
+
+        System.out.print("Digite o primeiro numero: ");
+        numero1 = sc.nextInt();
+
+        System.out.print("digite o segundo numero: ");
+        numero2 = sc.nextInt();
+
+        if (numero1 > numero2){
+            System.out.println(numero1 +  " maior que " + numero2);
+        }
+        else if (numero1 == numero2)
+            System.out.println("os numeros são iguais!!");
+
+        else {
+            System.out.println(numero2 + " maior que " + numero1);
+        }
+        sc.close(); // bom habito para programação 
+    }
+}
