@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in); 
+       double celsius, fahrenheit;
+        int escolha;
+
+        System.out.println("qual valor você quer converter?");
+        System.out.println("1 - celsius  para fahrenheit.");
+        System.out.println("2 - fahrenheit para celsius");
+        escolha = sc.nextInt();
+
+        if (escolha == 1 ){ 
+           System.out.println("digite a temperatura em celsius: ");
+           celsius = sc.nextDouble();
+
+           fahrenheit = celsius * 9/5 + 32;
+
+           System.out.println("fahrenheit = " + fahrenheit); 
+        }
+        else if ( escolha == 2 ){ 
+            System.out.println("digite a temperatura em fahrenheit: ");
+            fahrenheit = sc.nextDouble();
+
+            celsius = (fahrenheit - 32) / 1.8;
+
+            System.out.println("celsius = " + celsius);
+        
+        } 
+        else {
+            System.out.println("numero digitado incorreto reinicie o programa!");
+        }
+        sc.close(); // bom habito para programação 
+    }
+}
