@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in); // usar sc ao inves de ler pois é mais universal 
+       int numero; 
+
+        System.out.print("digite um numero: ");
+        numero = sc.nextInt();
+
+        if (numero >= 0 ) { 
+           System.out.println(numero + " é positivo"); 
+        }
+        else { 
+           System.out.println(numero + " é negativo");
+        }
+        sc.close(); // bom habito para programação 
+    }
+}
