@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in); // usar sc ao inves de ler pois é mais universal
+       int x, sobra;
+        
+        System.out.print("digite um numero: ");
+        x = sc.nextInt();
+
+        if (x % 2 == 0 ) {
+            System.out.println(x + " é par!");
+        }
+        else{
+            System.out.println(x + " é impar!");
+        }
+
+        sc.close(); // bom habito para programação 
+    }
+}
