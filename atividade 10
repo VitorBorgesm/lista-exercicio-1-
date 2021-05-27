@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+    // esse exercicio eu tive mais dificuldade então resolvi olhar o jeito que foi feito para entender
+    // tive problemas com a formula da equaçâo (mais tarde farei um programa que resolva baskhara ou algo mais avançado para treinar a matematica na programação)
+      double x = 2, resultado;
+
+      resultado = Math.pow(x, 2) + 3 * x + 2;
+      System.out.println("resultado = " + resultado);
+    
+    }
+}
